@@ -23,7 +23,6 @@ const TransactionHistory = ({ items }) => {
     </table>
 }
 
-export default TransactionHistory;
 
 TransactionHistory.propTypes = {
     items: PropTypes.arrayOf(PropTypes.exact({
@@ -33,3 +32,5 @@ TransactionHistory.propTypes = {
         currency: PropTypes.string,
     })),
 }
+
+export default TransactionHistory;
