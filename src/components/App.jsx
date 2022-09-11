@@ -14,10 +14,8 @@ export const App = () => {
   return (
     <div
      style={{
-        height: '100vh',
         display: 'flex',
-        flexWrap: 'wrap',
-        justifyContent: 'center',
+        flexDirection: 'column',
         alignItems: 'center',
         gap: '50px',  
         color: '#010101'

@@ -5,10 +5,9 @@ const FriendListItem = ({
     avatar,
     name,
     isOnline,
-    id
 }) => {
     const status = (isOnline) ? "isOnline" : "isOffline";
-    return <li className={styles.item} key={id}>
+    return <li className={styles.item}>
                 <span className={styles[status]}></span>
                 <img className={styles.avatar} src={avatar} alt="User avatar" width="48" />
                 <p className={styles.name}>{name}</p>
@@ -17,10 +16,9 @@ const FriendListItem = ({
     
 
 FriendListItem.propTypes = {
-    avatar: PropTypes.string,
+    avatar: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
-    isOnline: PropTypes.bool,
-    id: PropTypes.number,
+    isOnline: PropTypes.bool.isRequired,
 }
     
 export default FriendListItem;
